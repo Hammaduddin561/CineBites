@@ -1,22 +1,78 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
+# 🎬🍔 Combined Food & Movie Recommendation System
 
 By team Gulabjamun
 members:
 - Aanya Pathak
 - Hammad
 
-Currently, two official plugins are available:
+A smart recommendation web application that suggests Movies and Foods based on user search. The system uses tag-based similarity and content matching to generate relevant recommendations, along with cross-category pairing for a complete entertainment experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Search any Movie or Food item
+- 🧠 Tag-based recommendation engine
+- 🎯 Similarity match scoring
+- 🔀 Cross-category pairing (Movie → Food / Food → Movie)
+- 📦 Structured dataset (JSON based)
+- ⚡ Fast search and recommendation output
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ How It Works
+
+1. User searches for a movie or food item.
+2. The system retrieves its tags and metadata.
+3. Similarity is calculated with other items.
+4. Top matching items are recommended.
+5. Cross-category suggestions are also displayed.
+
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: Web UI
+- Data: JSON Dataset
+- Logic: JavaScript / Python
+- Recommendation: Tag Similarity Algorithm
+
+---
+
+## 📂 Dataset Structure
+
+Each item contains:
+
+- Name
+- Category (Food / Movie)
+- Tags
+- Description
+
+Example:
+
+```json
+{
+  "name": "Avengers Endgame",
+  "category": "Movie",
+  "tags": ["action", "superhero", "epic"],
+  "description": "Final battle of Avengers"
+}
+```
+
+---
+
+## 🏁 Hackathon Context
+
+Built for Engi Prix 2026 to simulate real-world recommendation systems by combining logical similarity algorithms with practical search functionality.
+
+---
+
+## 📌 Future Enhancements
+
+- AI-based recommendations
+- User preference learning
+- Ratings & reviews
+- Collaborative filtering
+- Voice search integration
+
+---
